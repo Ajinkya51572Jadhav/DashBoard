@@ -8,6 +8,7 @@ import Products from "../pages/Products";
 import Analytics from "../pages/Analytics";
 import Settings from "../pages/Settings";
 import Profile from "../pages/Profile";
+import Branch from "../pages/Master/Branch";
 
 const { Content } = Layout;
 
@@ -43,6 +44,8 @@ const MainLayout = () => {
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/profile" element={<Profile />} />
+              {/* Master Menus */}
+              <Route path="/master/branch" element={<Branch />} />
             </Routes>
           </Content>
         </Layout>
